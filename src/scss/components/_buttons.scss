@@ -1,0 +1,22 @@
+// Simple button style example
+.btn {
+  $btn-color: $color-brand;
+  $text-color: $color-white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  background: $btn-color;
+  color: $text-color;
+  transition: 200ms ease;
+  transition-property: color, background;
+
+  &:hover {
+    background: lighten($btn-color, $amount: 10);
+    color: lighten($text-color, $amount: 10);
+  }
+  &:active {
+    background: lighten($btn-color, $amount: 20);
+    color: lighten($text-color, $amount: 20);
+  }
+}
